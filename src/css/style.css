@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+.red_border
+{
+    border: 1px dashed red;
+}
+
+.bg_color
+{
+    background-color: #b9ffc1;
+
+}
+
+.calculator {
+    width: 546px;
+    margin-top: 23px;
+    margin-left: 26px;
+    margin-right: 26px;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.input_values {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_val {
+    color: red;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 14px;
+
+    padding: 10px;
+    outline: none;
+    
+
+}
+
+.error_class
+{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.operator {
+    color: red;
+    border-radius: 10px;
+    padding: 6.5px 5px 6.5px;
+    width: 80px;
+    font-size: 20px;
+    font-weight: normal;
+
+    margin: 0 22px;
+}
+
+.calculate_button {
+    border-radius: 10px;
+    color: red;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 160px;
+    margin: 33px auto 28px;
+    display: flex;
+    justify-content: center;
+}
+
+.result {
+    color: red;
+    padding: 10px;
+    font-size: 1.2rem;
+    min-height: 30px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.result_history
+{
+    color: rgba(255, 0, 0, 0.5);
+    padding: 10px 10px 10px 0;
+    font-size: 1.2rem;
+    min-height: 30px;
+    text-align: left;
+    border-radius: 10px;
+    margin-left: 0;
+}
+
+@media (max-width: 640px) {
+    .calculator
+    {
+        width: 222px;
+        margin-top: 30px;
+    }
+
+    .input_values {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .input_val
+    {
+        max-width: 100%;
+        padding: 11px 0;
+        padding-left: 11px;
+    }
+
+    .calculate_button
+    {
+        width: 180px;
+        margin-left: 26px;
+        margin-top: 18px;
+        margin-bottom: 20px;
+        padding: 10px 0;
+    }
+
+    .result
+    {
+        width: 199px;
+        margin-left: 3px;
+        padding: 10px 0 10px 11 px;
+    }
+
+    .result_history
+    {
+        margin-left: 0;
+    }
+}
